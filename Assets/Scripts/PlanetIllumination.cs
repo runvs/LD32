@@ -11,7 +11,7 @@ public class PlanetIllumination : MonoBehaviour
 	private const float PI_HALF = Mathf.PI / 2;
 	private const float START_POINT = PI_HALF * 3 / 4;
 	private const float END_POINT = PI_HALF * 5 / 4;
-	private const float BRIGHT_VALUE = 0.8f;
+	private const float BRIGHT_VALUE = 0.5f;
 	private const float DIM_VALUE = 0.1f;
 
 	private Color _brightColor = new Color (BRIGHT_VALUE, BRIGHT_VALUE, BRIGHT_VALUE);
