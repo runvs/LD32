@@ -339,6 +339,10 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f68d280e52e184675824b358faed5bb8, type: 3}
   m_IsPrefabParent: 0
+--- !u!4 &1506316848 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400000, guid: f68d280e52e184675824b358faed5bb8, type: 3}
+  m_PrefabInternal: {fileID: 1141627498}
 --- !u!1 &1514968842
 GameObject:
   m_ObjectHideFlags: 0
@@ -409,6 +413,7 @@ GameObject:
   - 4: {fileID: 2136809120}
   - 108: {fileID: 2136809119}
   - 114: {fileID: 2136809118}
+  - 114: {fileID: 2136809121}
   m_Layer: 0
   m_Name: Sun
   m_TagString: Untagged
@@ -474,3 +479,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
+--- !u!114 &2136809121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2136809117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45c1e445c4a3e4366a07893d63beb62a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Sun: {fileID: 2136809120}
+  Planet: {fileID: 1506316848}
+  Camera: {fileID: 373120889}
+  PlanetMaterial: {fileID: 2100000, guid: 3fc2ebb57ea9a4af4bc43c2a99ce70f7, type: 2}
