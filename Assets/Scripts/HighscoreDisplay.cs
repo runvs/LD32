@@ -1,13 +1,12 @@
 ﻿using System;
 using UnityEngine;
 using System.Collections;
-using UnityEngine.UI;
 
-public class HighscoreScript : MonoBehaviour
+public class HighscoreDisplay : MonoBehaviour
 {
 
-    private Text _text;
-    private static uint _score = 0;
+    private UnityEngine.UI.Text _text;
+
 
     // Use this for initialization
     void Start()
@@ -23,16 +22,14 @@ public class HighscoreScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        _text.text = _score.ToString();
-    }
-
-    public static void AddHighscore(uint score)
-    {
-        _score += score;
-    }
-
-    public static uint GetScore()
-    {
-        return _score;
+        int score = PlayerPrefs.GetInt("highscore", -1000);
+        if (score != -1000)
+        {
+            _text.text = "Highscore  " + score.ToString();
+        }
+        else
+        {
+            _text.text = "";
+        }
     }
 }
