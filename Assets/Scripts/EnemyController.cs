@@ -15,6 +15,17 @@ public class EnemyController : MonoBehaviour
 	{
 	
 	}
+
+	void OnCollisionEnter(Collision collision)
+	{
+		Debug.Log(collision.gameObject.name);
+
+		if(collision.gameObject.tag == "Laser")
+		{
+			Debug.Log("hit!");
+			Destroy(this.gameObject);
+		}
+	}
 	
 	void Wander()
     {

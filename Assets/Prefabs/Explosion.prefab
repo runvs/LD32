@@ -11,9 +11,10 @@ GameObject:
   - 198: {fileID: 19803338}
   - 199: {fileID: 19970898}
   - 114: {fileID: 11442814}
+  - 135: {fileID: 13567442}
   m_Layer: 0
   m_Name: Explosion
-  m_TagString: Untagged
+  m_TagString: Explosion
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41,13 +42,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cc5709f91a07c64794a5992e299bb2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!135 &13567442
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 102298}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: .0700000003
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!198 &19803338
 ParticleSystem:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 102298}
-  lengthInSec: 2
+  lengthInSec: .25999999
   startDelay: 0
   speed: 1
   randomSeed: 0
