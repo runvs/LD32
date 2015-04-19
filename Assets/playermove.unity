@@ -180,6 +180,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShotTemplate: {fileID: 143470, guid: e955c246e8d083e49aa5eaa99d03d508, type: 2}
+  emitter: {fileID: 0}
 --- !u!1 &373120884
 GameObject:
   m_ObjectHideFlags: 0
@@ -317,7 +318,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: .606999993
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Priority: 128
   DopplerLevel: 1
