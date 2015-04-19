@@ -29,5 +29,7 @@ public class SunMovement : MonoBehaviour
                                     Mathf.Sin(Mathf.Deg2Rad * Inclination);
         this.transform.position = new Vector3(x, y, z);
 
+		var rotation = Quaternion.FromToRotation(new Vector3(0, 0, -1), this.transform.position);
+		this.transform.rotation = rotation;
     }
 }
