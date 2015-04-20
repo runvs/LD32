@@ -7,19 +7,19 @@ public class PlayerMovement : MonoBehaviour
     //private Transform _t;
     public GameObject Rotator;
 
-	// Use this for initialization
-	void Start ()
-	{
-	   // _t = this.transform;
-	}
-	
-	// Update is called once per frame
-	void Update () 
+    // Use this for initialization
+    void Start()
     {
-	    if (Input.GetAxis("Horizontal") > 0)
-	    {
-	        MoveRight();
-	    }
+        // _t = this.transform;
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (Input.GetAxis("Horizontal") > 0)
+        {
+            MoveRight();
+        }
         else if (Input.GetAxis("Horizontal") < 0)
         {
             MoveLeft();
@@ -34,26 +34,26 @@ public class PlayerMovement : MonoBehaviour
             MoveUp();
         }
 
-	}
+    }
 
     private void MoveDown()
     {
-        Rotator.transform.Rotate(new Vector3(1, 0, 0), 2.25f);
+        Rotator.transform.Rotate(new Vector3(1, 0, 0), GameProperties.PlayerMoveSpeed);
     }
 
     private void MoveUp()
     {
-        Rotator.transform.Rotate(new Vector3(1, 0, 0), -2.25f);
+        Rotator.transform.Rotate(new Vector3(1, 0, 0), -GameProperties.PlayerMoveSpeed);
     }
 
     private void MoveLeft()
     {
-        Rotator.transform.Rotate(new Vector3(0, 0, 1), 2.25f);
+        Rotator.transform.Rotate(new Vector3(0, 0, 1), GameProperties.PlayerMoveSpeed);
     }
 
     private void MoveRight()
     {
-        Rotator.transform.Rotate(new Vector3(0, 0, 1), -2.25f);
+        Rotator.transform.Rotate(new Vector3(0, 0, 1), -GameProperties.PlayerMoveSpeed);
     }
 
 

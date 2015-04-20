@@ -9,4 +9,9 @@ public static class GameProperties
 
     public static float Difficulty { get; set; }    // easy 0.75, normal 1, hard 1.5
 
+    public static float PlayerMoveSpeed
+    {
+        get { return 1.25f; }
+    }
+
 }
