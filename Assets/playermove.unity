@@ -188,6 +188,7 @@ GameObject:
   - 212: {fileID: 242205490}
   - 114: {fileID: 242205493}
   - 114: {fileID: 242205494}
+  - 82: {fileID: 242205492}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -234,6 +235,76 @@ Transform:
   - {fileID: 254014350}
   m_Father: {fileID: 2087969740}
   m_RootOrder: 1
+--- !u!82 &242205492
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 242205489}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 24373630, guid: ef43aef44d1923a4ebf4e0642518ea6e,
+    type: 2}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!114 &242205493
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -258,7 +329,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShotTemplate: {fileID: 143470, guid: e955c246e8d083e49aa5eaa99d03d508, type: 2}
-  LaserSound: {fileID: 0}
+  LaserSound: {fileID: 8300000, guid: 8e820f5083117fd439ce226e72d8cad9, type: 3}
 --- !u!1 &254014348
 GameObject:
   m_ObjectHideFlags: 0
@@ -440,16 +511,16 @@ MonoBehaviour:
   hdr: 0
   sepBlurSpread: 3.29999995
   quality: 1
-  bloomIntensity: 3
-  bloomThreshold: .189999998
+  bloomIntensity: 2
+  bloomThreshold: .300000012
   bloomThresholdColor: {r: 1, g: 1, b: 1, a: 1}
   bloomBlurIterations: 4
   hollywoodFlareBlurIterations: 2
   flareRotation: 0
   lensflareMode: 2
   hollyStretchWidth: 7
-  lensflareIntensity: 5
-  lensflareThreshold: .25999999
+  lensflareIntensity: 3
+  lensflareThreshold: .330000013
   lensFlareSaturation: .25
   flareColorA: {r: .400000006, g: .400000006, b: .800000012, a: .75}
   flareColorB: {r: .400000006, g: .800000012, b: .800000012, a: .75}
@@ -1384,7 +1455,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2136809117}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5, y: 0, z: 0}
+  m_LocalPosition: {x: .43599999, y: 0, z: -2.13199997}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
