@@ -6,7 +6,7 @@ public class TimerScript : MonoBehaviour
 {
 
     private UnityEngine.UI.Text _text;
-    private float _timer = 110;
+    private float _timer = 70;
     // Use this for initialization
     void Start()
     {
