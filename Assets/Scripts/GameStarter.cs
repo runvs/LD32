@@ -27,8 +27,9 @@ public class GameStarter : MonoBehaviour
         GameProperties.Difficulty = .75f;
     }
 
-    public void SetDifficulty()
+    public void OpenLink()
     {
-
+        System.Diagnostics.Process.Start("http://runvs.io");
     }
+
 }
