@@ -18,7 +18,7 @@ public class ShotCollision : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        var ex = Instantiate(emitter, this.transform.position * 0.95f, new Quaternion());
+        Instantiate(emitter, this.transform.position * 0.95f, new Quaternion());
         Destroy(this.gameObject);
     }
 }

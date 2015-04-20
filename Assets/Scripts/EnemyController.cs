@@ -23,7 +23,16 @@ public class EnemyController : MonoBehaviour
 
         if (collision.gameObject.tag == "Laser")
         {
-            HighscoreScript.AddHighscore(2);
+            uint score = 1;
+            if (GameProperties.Difficulty > 0.75f)
+            {
+                score += 1;
+            }
+            if (GameProperties.Difficulty > 1.0f)
+            {
+                score += 1;
+            }
+            HighscoreScript.AddHighscore(score);
             Debug.Log("hit!");
             Destroy(this.gameObject);
         }

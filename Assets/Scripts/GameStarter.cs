@@ -24,6 +24,11 @@ public class GameStarter : MonoBehaviour
     public void StartGame()
     {
         Invoke("ChangeLevel", 0.15f);
+        GameProperties.Difficulty = .75f;
+    }
+
+    public void SetDifficulty()
+    {
 
     }
 }

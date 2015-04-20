@@ -12,6 +12,7 @@ public class HighscoreScript : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        _score = 0;
         _text = gameObject.GetComponent<UnityEngine.UI.Text>() as UnityEngine.UI.Text;
         if (_text == null)
         {
