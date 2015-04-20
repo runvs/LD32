@@ -8,6 +8,7 @@ TagManager:
   - Explosion
   - Laser
   - Highscore
+  - Enemy
   layers:
   - Default
   - TransparentFX
