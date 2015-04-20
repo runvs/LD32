@@ -6,11 +6,11 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: spritematerial
-  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: _EMISSION
+  m_Name: PlayerMaterial
+  m_Shader: {fileID: 45, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: _ALPHATEST_ON _EMISSION _NORMALMAP
   m_LightmapFlags: 1
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 2450
   m_SavedProperties:
     serializedVersion: 2
     m_TexEnvs:
@@ -18,14 +18,14 @@ Material:
         first:
           name: _MainTex
         second:
-          m_Texture: {fileID: 0}
+          m_Texture: {fileID: 2800000, guid: 86672f9bf45a5cc4bb041e8efe0c1a2e, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
           name: _BumpMap
         second:
-          m_Texture: {fileID: 0}
+          m_Texture: {fileID: 2800000, guid: 438ebd07ff9e0fe45ac5284ba53b41c5, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -53,7 +53,7 @@ Material:
         first:
           name: _EmissionMap
         second:
-          m_Texture: {fileID: 0}
+          m_Texture: {fileID: 2800000, guid: 86672f9bf45a5cc4bb041e8efe0c1a2e, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -77,11 +77,22 @@ Material:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _SpecGlossMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
     m_Floats:
       data:
         first:
           name: _Cutoff
-        second: .5
+        second: .145999998
+      data:
+        first:
+          name: _Shininess
+        second: .078125
       data:
         first:
           name: _SrcBlend
@@ -101,11 +112,11 @@ Material:
       data:
         first:
           name: _Glossiness
-        second: .00700000022
+        second: .344000012
       data:
         first:
           name: _BumpScale
-        second: 1
+        second: 2
       data:
         first:
           name: _OcclusionStrength
@@ -121,11 +132,11 @@ Material:
       data:
         first:
           name: _EmissionScaleUI
-        second: .400000006
+        second: .200000003
       data:
         first:
           name: _Mode
-        second: 0
+        second: 1
       data:
         first:
           name: _Metallic
@@ -134,11 +145,15 @@ Material:
       data:
         first:
           name: _EmissionColor
-        second: {r: .400000006, g: .400000006, b: .400000006, a: .400000006}
+        second: {r: .200000003, g: .200000003, b: .200000003, a: .200000003}
       data:
         first:
           name: _Color
         second: {r: .639705896, g: .639705896, b: .639705896, a: 1}
+      data:
+        first:
+          name: _SpecColor
+        second: {r: .200000003, g: .200000003, b: .200000003, a: 1}
       data:
         first:
           name: _EmissionColorUI
